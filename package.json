@@ -1,0 +1,19 @@
+{
+  "name": "workers-chatroom",
+  "private": true,
+  "engines": {
+    "node": ">=20.12.0"
+  },
+  "packageManager": "pnpm@9.3.0",
+  "scripts": {
+    "dev": "turbo dev --parallel",
+    "postinstall": "pnpm lint:ws",
+    "lint:ws": "pnpm dlx sherif@latest"
+  },
+  "devDependencies": {
+    "@workers-chatroom/prettier-config": "workspace:*",
+    "prettier": "^3.3.2",
+    "turbo": "^2.0.4"
+  },
+  "prettier": "@workers-chatroom/prettier-config"
+}

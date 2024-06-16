@@ -1,0 +1,22 @@
+{
+  "name": "@workers-chatroom/auth",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@auth/core": "^0.32.0",
+    "@auth/drizzle-adapter": "^1.2.0",
+    "@hono/auth-js": "^1.0.8",
+    "drizzle-orm": "^0.31.2",
+    "hono": "^4.4.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240614.0",
+    "@workers-chatroom/prettier-config": "workspace:*",
+    "drizzle-kit": "^0.22.7",
+    "wrangler": "^3.57.2"
+  },
+  "prettier": "@workers-chatroom/prettier-config"
+}
